@@ -13,9 +13,9 @@ class Config(object):
 
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
 
-    API_ID = int(os.environ.get("API_ID", 12345))
+    API_ID = int(os.environ.get("API_ID", ""))
 
-    API_HASH = os.environ.get("API_HASH")
+    API_HASH = os.environ.get("API_HASH","")
 
     AUTH_USERS = set(int(x) for x in os.environ.get("AUTH_USERS", "").split())
 
@@ -47,7 +47,7 @@ class Config(object):
 
     DATABASE_URL = os.environ.get("DATABASE_URL", "")
 
-    SESSION_NAME = os.environ.get("SESSION_NAME", "UploadLinkToFileBot")
+    SESSION_NAME = os.environ.get("SESSION_NAME", "RSuploader_bot")
 
     LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", -100))
 
@@ -57,4 +57,4 @@ class Config(object):
 
     UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "")
     
-    BOT_USERNAME = os.environ.get("BOT_USERNAME", "UploadLinkToFileBot")
+    BOT_USERNAME = os.environ.get("BOT_USERNAME", "RSuploader_bot")
