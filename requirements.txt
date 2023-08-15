@@ -1,4 +1,4 @@
-aiohttp
+aiohttp==3.8.2
 beautifulsoup4
 hachoir
 numpy
